@@ -8,7 +8,7 @@ Licensed under MIT
 ## Quickstart
 
 This is meant for experienced users:
-- copy precompiled executable into your `$PATH`
+- copy precompiled executable into your `$PATH` and rename it to `ea`
 - activate API in Everdo settings and set an API key (on restart Everdo will set one if the field is empty)
 - use env variable EVERDO_API_KEY to set the API key for everdoadd (**ea**)
 - if you want to add tasks from a differenct computer 
