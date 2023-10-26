@@ -30,7 +30,7 @@ is available should be supported. Only Linux and macOS are tested. Bug reports a
 
 ### Precompiled binaries
 
-You find precompiled versions for Linux, Windows and macOS [here](todo) Copy the executable to a directory in your `PATH` and rename it to `ea`.  
+You find precompiled versions for Linux, Windows and macOS [here](https://github.com/bodemann/everdoadd/releases) Copy the executable to a directory in your `PATH` and rename it to `ea`.  
 
 ### Building from source
 
