@@ -1,0 +1,12 @@
+version: '3'
+
+tasks:
+  build:
+    cmds:
+      - go build cmd/ea.go
+
+  github-releases:
+    cmds:
+      - GOOS=darwin GOARCH=amd64 go build -o releases/ea.darwin.amd64 cmd/ea.go
+      - GOOS=windows GOARCH=amd64 go build -o releases/ea.windows.amd64.exe cmd/ea.go
+      - GOOS=linux GOARCH=amd64 go build -o releases/ea.linux.amd64 cmd/ea.go
