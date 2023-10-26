@@ -5,6 +5,13 @@ everdoadd (ea)
 
 Licensed under MIT
 
+## Examples
+
+- **ea** Fitness `Add a task named "Fitness" without a descrition to Everdo inbox.`
+- **ea** Vacation Plan vacation for the family `Add a task "Vacation" and the description Plan vacation...`
+- **ea** --help `Prints everdoadd help information`
+- **ea** --debug `Print debug information. CAUTION: prints IP address and API-key to stdout.`
+
 ## Quickstart
 
 This is meant for experienced users:
@@ -15,11 +22,6 @@ This is meant for experienced users:
   - set IP/Hostname in the Everdo settings (default is localhost:11111)
   - set env variable EVERDO_IP_ADDRESS to the same value, don't forget the port (e.g. 192.168.10.1:12344) 
 - restart everdo to activate the api
-- Examples
-  - **ea** Fitness `Add a task named "Fitness" without a descrition to Everdo inbox.`
-  - **ea** Vacation Plan vacation for the family `Add a task "Vacation" and the description Plan vacation...`
-  - **ea** --help `Prints everdoadd help information`
-  - **ea** --debug `Print debug information. CAUTION: prints IP address and API-key to stdout.`
   
 ## Installation
 
