@@ -11,7 +11,7 @@ import (
 	"strings"
 )
 
-const VersionAutoCounter = 0.3
+const AutoVersion = "0.3.1"
 
 const ApiKeyEnvName = "EVERDO_API_KEY"
 const IpAddressEnvName = "EVERDO_IP_ADDRESS"
@@ -41,7 +41,7 @@ func main() {
 
 func usage() {
 	fmt.Println("everdoadd (ea), a program to add tasks to a Everdo (everdo.net) inbox.")
-	fmt.Println("Version: ", VersionAutoCounter)
+	fmt.Println("Version: ", AutoVersion)
 	fmt.Println("everdoadd uses two environment variables:")
 	fmt.Printf("\t%s to tell everdoadd on which IP/port Everdo is listening. Default is %s\n", IpAddressEnvName, DefaultIpAddress)
 	fmt.Printf("\t%s to tell everdoadd which API-key Everdo is expecting.\n", ApiKeyEnvName)
@@ -55,7 +55,7 @@ func usage() {
 	fmt.Println("\t                    Use \" \" for multi word titles")
 	fmt.Println("\tea --debug          CAUTION: prints IP address and API-key to stdout")
 	fmt.Println("\tea --help           Prints this text")
-	fmt.Println("\tea --version        Prints VersionAutoCounter information")
+	fmt.Println("\tea --version        Prints version information")
 	fmt.Println()
 }
 
@@ -98,8 +98,8 @@ func handleParameter() (string, string) {
 	case "--help":
 		usage()
 		os.Exit(0)
-	case "--VersionAutoCounter":
-		fmt.Println(VersionAutoCounter)
+	case "--version":
+		fmt.Println(AutoVersion)
 		os.Exit(0)
 	case "--debug":
 		apiKey, ipAddress := getEnvironmentVariables()
