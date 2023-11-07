@@ -11,7 +11,7 @@ import (
 	"strings"
 )
 
-const AutoVersion = "0.3.1"
+const AutoVersion = "0.3.7"
 
 const ApiKeyEnvName = "EVERDO_API_KEY"
 const IpAddressEnvName = "EVERDO_IP_ADDRESS"
